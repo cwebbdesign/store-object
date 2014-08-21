@@ -1,0 +1,26 @@
+{
+  "name": "store-object",
+  "version": "0.0.1",
+  "author": {
+    "name": "Chris Webb",
+    "email": "chris@christopherwdesign.com",
+    "url": "http://blog.mediumequalsmessage.com"
+  },
+  "description": "Creates a simple named store object which serves as a wrapper for an array or an object and provides utilities for adding and retrieving values.",
+  "keywords": [
+    "storage",
+    "utility"
+  ],
+  "devDependencies": {
+    "lodash": "~2.4.1",
+    "chai": "~1.9.1"
+  },
+  "repository": {
+    "url": "git@github.com:cwebbdesign/store-object.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "~2.4.1"
+  }
+}
