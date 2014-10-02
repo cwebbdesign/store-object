@@ -11,8 +11,10 @@
     "storage",
     "utility"
   ],
+  "dependencies": {
+    "lodash": "~2.4.1"
+  },
   "devDependencies": {
-    "lodash": "~2.4.1",
     "chai": "~1.9.1"
   },
   "repository": {
