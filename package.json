@@ -15,14 +15,21 @@
     "lodash": "~2.4.1"
   },
   "devDependencies": {
-    "chai": "~1.9.1"
+    "chai": "~1.9.1",
+    "gulp": "^3.8.8",
+    "chai": "^1.9.1",
+    "gulp-esformatter": "^1.0.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-jsvalidate": "^1.0.0",
+    "gulp-mocha": "^1.0.0",
+    "jshint-stylish": "^0.4.0",
+    "map-stream": "^0.1.0",
+    "mocha-unfunk-reporter": "^0.4.0",
+    "run-sequence": "^0.3.6"
   },
   "repository": {
     "url": "git@github.com:cwebbdesign/store-object.git",
     "type": "git"
   },
-  "license": "MIT",
-  "dependencies": {
-    "lodash": "~2.4.1"
-  }
+  "license": "MIT"
 }
