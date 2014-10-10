@@ -32,19 +32,19 @@ module.exports = (function() {
       this.type = _.isArray(this.items) ? 'array' : 'object';
     },
 
-    add: function(component) {
-      if (this.type === 'array') {
-        this.items.push(component);
+    add: function(thing) {
+      if (this.type === "array") {
+        this.items.push(thing);
       } else {
-        this.items[component.name] = component;
+        this.items[thing.name] = thing;
       }
 
     },
-    remove: function(component) {
-      _.pull(this.items, component);
+    remove: function(thing) {
+      _.pull(this.items, thing);
     },
     get: function(compname) {
-      if (this.type === 'array') {
+      if (this.type === "array") {
         return _.filter(this.items, function(item) {
           return item === compname;
         });
@@ -55,12 +55,15 @@ module.exports = (function() {
       }
     },
 
-    populate: function(componentsArray) {
+    populate: function(thingsArray) {
       var self = this,
-        args = _.isArray(componentsArray) ? componentsArray : Array.prototype.slice.call(arguments);
+        args = _.isArray(thingsArray) ? thingsArray : Array.prototype.slice.call(arguments);
 
-      _.each(args, function(component) {
-        self.add(component);
+      _.each(args, function(thing) {
+        if (!thing) {
+          return;
+        }
+        self.add(thing);
       });
 
       return self;

@@ -49,11 +49,20 @@ describe('Store', function() {
       expect(store.get(1)[0]).to.equal(undefined);
     });
 
-    it('should accept multiple values at once', function() {
-      store = new Store('test', []);
-      store.populate([1, 2, 3, 4, 5])
-      store.items.length.should.equal(5);
+    describe('Populate', function() {
+      it('should accept multiple values at once', function() {
+        store = new Store('test', []);
+        store.populate([1, 2, 3, 4, 5])
+        store.items.length.should.equal(5);
+      });
+
+      it('should ignore an undefined or null value', function() {
+        store = new Store('test', []);
+        store.populate([1, '', 3, 4, 5])
+        store.items.length.should.equal(4);
+      });
     });
+
   });
 
   describe('Object as Store', function() {
