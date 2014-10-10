@@ -1,6 +1,6 @@
 {
   "name": "store-object",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Chris Webb",
     "email": "chris@christopherwdesign.com",
@@ -15,9 +15,8 @@
     "lodash": "~2.4.1"
   },
   "devDependencies": {
-    "chai": "~1.9.1",
-    "gulp": "^3.8.8",
     "chai": "^1.9.1",
+    "gulp": "^3.8.8",
     "gulp-esformatter": "^1.0.0",
     "gulp-jshint": "^1.8.4",
     "gulp-jsvalidate": "^1.0.0",
